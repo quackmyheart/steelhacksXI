@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Paper Studio Code</title>
+    <link href="style.css" rel="stylesheet" type="text/css" /> <!--linked CSS-->
+  </head>
+<body>
+
+  <p> HTML version: 4.1 </p>
+  <p id = "version">yay</p>
+  <p id = "versionRecognize">yay</p>
+  <p id = "versionGemini">yay</p>
+  
+  <div id = "logo">
+    <img src="logo.JPG" height="100">
+  </div> 
+  
+    <video class = "container" id="video"> video should display here </video>
+
+    <img class = "container" id="photo" alt="captured code should go here" />
+
+  <button class = "container" id="startbutton"> Capture Code </button>
+  
+  <canvas class = "container" id="canvas"> </canvas> <!-- canvas used to store images and manipulated so user doesn't see them --> 
+
+
+  <!-- button for using tesseract -->
+  <div>
+    <button id="codeButton1"> Recognize Code </button>
+    <button id="codeButton2"> Recognize Code </button>
+    <button id="codeButton3"> Recognize Code </button>
+  </div>
+  
+  <p id="result"> your code from paper will come here </p>
+  <button id="compile1"> compile! </button>
+  <button id="compile2"> compile! </button>
+  <button id="compile3"> compile! </button>
+  <p id="compiled"> your code compiled code will come here </p>
+
+  <!-- JavaScript OCR Tesseract CDN 
+  hopefully this means that I don't have to download anything? -->
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@v2.0.1/dist/tesseract.min.js"></script>
+  
+  <!-- google gemini things -->
+  <script type="importmap">
+    {
+    "imports": {
+    "@google/generative-ai": "https://esm.run/@google/generative-ai"
+    }
+    }
+  </script>
+  
+  <!-- this might be stupid? --> 
+  <script type="module">
+      import { GoogleGenerativeAI } from "@google/generative-ai";
+
+      // Fetch your API_KEY
+      const API_KEY = "...";
+  </script>
+
+  <script src="script.js"></script> <!--linked JavaScript-->
+  <script src="recognizeImage.js"></script> <!--linked JavaScript-->
+  <script src="geminiThingsStoredHere.js"></script> <!--linked JavaScript-->
+  
+</body>
+</html>
