@@ -1,0 +1,12 @@
+video {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#logo {
+    text-align: center;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  }
