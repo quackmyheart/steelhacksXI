@@ -1,8 +1,5 @@
 # steelhacksXI: Paper Studio Code
 
-## Team Members
-Hina Sekine (hinasekine@yaylife.dev / his38@pitt.edu)
-
 ## Inspiration
 I was inspired by the general hatred of applied computer science: having to code, having to carry around electronics, and everything associated with computers as a CS major. In my years of undergrad want to play around with turning machines, do mathematics, and talk to ducks and so Paper Studio Code helps me by allowing me to touch computers a little bit less often. 
 
